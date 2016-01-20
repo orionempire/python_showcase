@@ -46,11 +46,11 @@ def alt_main():
     for letter in sorted(the_map):
         print "{} appears {:3} times.".format(letter,the_map[letter])
 
-    for letter in string.ascii_lowercase:
-        if letter not in the_map.keys():
-           print letter+' ',
+    the_string = ""
+    for letter in (set(string.ascii_lowercase) - set(the_map.keys())):
+        the_string += letter+' '
 
-    print " do not appear in the address."
+    print the_string+" are not in not in the address."
 
 
 
