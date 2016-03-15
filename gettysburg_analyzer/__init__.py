@@ -32,7 +32,7 @@ def main():
 
     for letter in string.ascii_lowercase:
         if letter not in the_map.keys():
-           print letter+' ',
+            print letter+' ',
 
     print " are not in not in the address."
 
